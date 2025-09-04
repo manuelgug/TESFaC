@@ -79,27 +79,12 @@ data/raw/
 
 ### Required Resources
 
+pfPHAST is a preselected set of highly diverse amplicons from the mad4hatter panel. Recommended over using the whole amplicon set (--optim_ampset true) to save time and computational resources.
+
 ```
 resources/
 └── pfPHAST_20amps.csv               # Amplicon selection file
 ```
-
-### Metadata Format
-
-The metadata file must contain these columns:
-- `NIDA`: Sample identifier
-- `PairsID`: Paired sample identifier
-- `time_point`: D0 or Dx
-- `SampleID`: Additional sample ID
-
-### Genomic Data Format
-
-Genomic files must contain:
-- `sampleID`: Sample identifier
-- `locus`: Amplicon/locus name
-- `pseudo_cigar`: Sequence variant
-- `reads`: Read counts
-- `norm.reads.locus`: Normalized read frequency
 
 ## Parameters
 
@@ -116,7 +101,7 @@ Genomic files must contain:
 | Parameter | Default | Description |
 |-----------|---------|-------------|
 | `--maf_filter` | 0.01 | Minor allele frequency threshold |
-| `--min_allele_read_count` | 10 | Minimum reads per allele |
+| `--min_allele_read_count` | 10 | Minimum reads per allele to be considered true |
 | `--cum_curve_threshold` | 0.95 | Cumulative curve threshold |
 | `--optim_ampset` | false | Subset the shared amplicons across pairs from the whole amplicon set |
 
