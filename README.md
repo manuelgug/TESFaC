@@ -202,7 +202,7 @@ results_<SITE>/
 
 ### 8. Target Augmentation
 - FNR-based data augmentation
-- Synthetic sample generation for pair types that with low frequency clones in the real data
+- Synthetic sample generation for pair types with low frequency clones in the real data
 
 ### 9. ML Modeling
 - GLMNET model training with cross-validation
