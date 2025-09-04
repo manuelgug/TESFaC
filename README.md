@@ -303,13 +303,6 @@ done
 
 If you use this pipeline, please cite the TESFaC repository.
 
-## Support
-
-For issues and questions:
-- Open an issue on GitHub
-- Check the troubleshooting section
-- Review the Nextflow documentation
-
 ## License
 
-[Add your license information here]
+This project is licensed under the MIT License. See the LICENSE file for details.
