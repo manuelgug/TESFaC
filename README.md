@@ -70,7 +70,7 @@ The TESFaC pipeline consists of 9 sequential processes:
 Place the following files in your `--raw_data_dir`:
 
 ```
-raw_data_dir/
+data/raw/
 ├── metadata_tes_<SITE>.csv          # Sample metadata of the failure pairs
 ├── genomic_site_<SITE>.csv          # Site genomic data (aka contextual samples from the site the failure pairs belong to)
 └── *_RESULTS*/                      # TES failure pairs sequencing run directory
