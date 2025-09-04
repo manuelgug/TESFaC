@@ -1,0 +1,65 @@
+Bootstrap: docker
+From: rocker/r-ver:4.4.1
+
+%labels
+    Author Smalaria Team
+    Description Singularity image containing all software requirements for the smalaria-failure-detection pipeline
+
+%files
+    bin/ /opt/pipeline/bin/
+
+%post
+    apt-get update && apt-get install -y \
+        procps \
+        curl \
+        wget \
+        git \
+        build-essential \
+        libcurl4-openssl-dev \
+        libssl-dev \
+        libxml2-dev \
+        libgit2-dev \
+        libudunits2-dev \
+        libgdal-dev \
+        libgeos-dev \
+        libproj-dev \
+        libfontconfig1-dev \
+        libharfbuzz-dev \
+        libfribidi-dev \
+        libfreetype6-dev \
+        libpng-dev \
+        libtiff5-dev \
+        libjpeg-dev \
+        && apt-get clean \
+        && rm -rf /var/lib/apt/lists/*
+
+    R -e "install.packages('BiocManager', repos='https://cran.rstudio.com/')"
+    R -e "install.packages(c( \
+        'dplyr', \
+        'tidyr', \
+        'stringr', \
+        'ggplot2', \
+        'data.table', \
+        'reshape2', \
+        'purrr', \
+        'tibble', \
+        'Matrix', \
+        'progress', \
+        'caret', \
+        'glmnet', \
+        'broom', \
+        'vegan', \
+        'corrplot' \
+        ), repos='https://cran.rstudio.com/')"
+
+    mkdir -p /opt/pipeline/resources
+    if ls /opt/pipeline/bin/*.R 1> /dev/null 2>&1; then
+        chmod +x /opt/pipeline/bin/*.R
+    fi
+
+%environment
+    export PATH="/opt/pipeline/bin:$PATH"
+
+%runscript
+    exec /bin/bash
+

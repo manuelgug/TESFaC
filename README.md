@@ -18,7 +18,6 @@ This pipeline analyzes malaria genomic data to distinguish between treatment fai
 - [Requirements](#requirements)
 - [Troubleshooting](#troubleshooting)
 - [Citations](#citations)
-- [License](#license)
 
 ## Installation
 
@@ -77,16 +76,6 @@ raw_data_dir/
 └── *_RESULTS*/                      # TES failure pairs sequencing run directory
     └── allele_data_global_max_0_filtered.csv
 ```
-
-#### Example of Metadata file
-
-| SampleID | PairsID | NIDA      | time_point |
-|----------|---------|-----------|------------|
-| 37       | 19      | 1921214.2 | D0         |
-| 39       | 20      | 1920183.4 | D0         |
-| 38       | 19      | 1870305.3 | Dx         |
-| 40       | 20      | 2172296.2 | Dx         |
-
 
 ### Required Resources
 
@@ -329,6 +318,13 @@ done
 
 If you use this pipeline, please cite the TESFaC repository.
 
+## Support
+
+For issues and questions:
+- Open an issue on GitHub
+- Check the troubleshooting section
+- Review the Nextflow documentation
+
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+[Add your license information here]
