@@ -118,7 +118,7 @@ Genomic files must contain:
 | `--maf_filter` | 0.01 | Minor allele frequency threshold |
 | `--min_allele_read_count` | 10 | Minimum reads per allele |
 | `--cum_curve_threshold` | 0.95 | Cumulative curve threshold |
-| `--optim_ampset` | false | Use optimized amplicon set |
+| `--optim_ampset` | false | Subset the shared amplicons across pairs from the whole amplicon set |
 
 #### Computational Resources
 | Parameter | Default | Description |
