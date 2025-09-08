@@ -1,6 +1,6 @@
 # TESFaC
 
-**TesFac** (**T**herapeutic **E**fficacy **S**tudies **Fa**ilure **C**lassification) is a Nextflow pipeline for detecting treatment failure in malaria longitudinal studies using genomic data analysis and machine learning.
+**TesFac** (**T**herapeutic **E**fficacy **S**tudies **Fa**ilure **C**lassifier) is a Nextflow pipeline for detecting treatment failure in malaria longitudinal studies using genomic data analysis and machine learning.
 
 ## Overview
 
