@@ -1,6 +1,6 @@
-# TESFaC
+# TES-FC
 
-**TesFac** (**T**herapeutic **E**fficacy **S**tudies **Fa**ilure **C**lassifier) is a Nextflow pipeline for detecting treatment failure in malaria longitudinal studies using genomic data analysis and machine learning.
+**TES-FC** (**T**herapeutic **E**fficacy **S**tudies **F**ailure **C**lassifier) is a Nextflow pipeline for detecting treatment failure in malaria longitudinal studies using genomic data analysis and machine learning.
 
 ## Overview
 
@@ -32,11 +32,11 @@ This pipeline analyzes malaria genomic data to distinguish between treatment fai
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/TESFaC.git
-cd TESFaC
+git clone https://github.com/your-username/TES-FC.git
+cd TES-FC
 
 # Build the Singularity container
-singularity build TESFaC.sif Singularity.def
+singularity build TES-FC.sif Singularity.def
 ```
 
 ## Quick Start
@@ -51,7 +51,7 @@ nextflow run main.nf \
 
 ## Pipeline Overview
 
-The TESFaC pipeline consists of 9 sequential processes:
+The TES-FC pipeline consists of 9 sequential processes:
 
 1. **Data Cleaning** - Quality control and preprocessing
 2. **COI Calculation** - Complexity of infection estimation (offset naive COI)
@@ -222,7 +222,7 @@ Check that all required files exist with the correct names:
 #### Singularity Issues
 ```bash
 # Build container if needed
-singularity build --force TESFaC.sif Singularity.def
+singularity build --force TES-FC.sif Singularity.def
 ```
 
 ### Performance Optimization
@@ -301,7 +301,7 @@ done
 
 ## Citations
 
-If you use this pipeline, please cite the TESFaC repository.
+If you use this pipeline, please cite the TES-FC repository.
 
 ## License
 
