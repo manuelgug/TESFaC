@@ -2,7 +2,7 @@
 
 /*
 ========================================================================================
-    SMALARIA FAILURE DETECTION PIPELINE
+    TES-FC PIPELINE
 ========================================================================================
     A Nextflow pipeline for detecting treatment failure in malaria using genomic data
     analysis and machine learning.
@@ -276,7 +276,7 @@ workflow SMALARIA_FAILURE_DETECTION {
 
     log.info """
     ====================================
-    SMALARIA FAILURE DETECTION PIPELINE
+    TES-FC PIPELINE
     ====================================
     Site: ${params.site}
     Input directory: ${params.raw_data_dir}
