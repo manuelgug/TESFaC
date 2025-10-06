@@ -54,14 +54,14 @@ nextflow run main.nf \
 The TESFaC pipeline consists of 9 sequential processes:
 
 1. **Data Cleaning** - Quality control and preprocessing
-2. **COI Calculation** - Complexity of infection estimation
-3. **FNR Calculation** - False negative rate calculation
-4. **Clone Generation** - Monoclonal strain extraction
+2. **COI Calculation** - Complexity of infection estimation (offset naive COI)
+3. **FNR Calculation** - False negative rate calculation (values experimentally found)
+4. **Clone Generation** - Clone extraction, sufficiency of sampling assessment and synthetic clones generation if needed
 5. **Mix Generation** - Synthetic mixture creation
 6. **Pairs Generation** - Training pair construction
-7. **Feature Calculation** - Genomic feature extraction
-8. **Target Augmentation** - Training data enhancement
-9. **ML Modeling** - Machine learning classification
+7. **Feature Calculation** - Genomic feature extraction between pairs of mixes
+8. **Target Augmentation** - Training data enhancement for pairs with low frequency clones (<0.03 allele frequency)
+9. **ML Modeling** - Machine learning model creation, training, testing, evaluation and prediction
 
 ## Input Data
 
